@@ -1,0 +1,28 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title></title>
+	<script>
+		var  book=["1","2","3"];
+		var book_str=book.toString();
+		var book_str1=book.join(';');
+		console.log(book_str);
+		console.log(book_str1);
+		//console.log(1.toString);//直接使用是错误的
+		/****序列化****/
+		var o={x:1,y:{z:[false,null,""]}};
+		var tostring_=o.toString();
+		var s=JSON.stringify(o);
+		var p=JSON.parse(s);
+		var tt={x:1,y:2};
+		console.log(tostring_);
+		console.log(tt);
+
+	</script>
+
+</head>
+<body>
+	
+</body>
+</html>
